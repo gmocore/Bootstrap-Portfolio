@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
   <!-- Required meta tags -->
@@ -12,28 +12,22 @@
 
   <title>Hello, world!</title>
 
-  <style>
-    .footer {
-      height: 60px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+
 
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark p-0">
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
     <div class="container">
-      <a class="navbar-brand text-light bg-info p-3" href="#">Gerritt Black</a>
+      <a class="navbar-brand text-dark bg-light p-3" href="#">Gerritt Black</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
+        <span class="navbar-toggler-icon text"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav nav-tabs">
-          <a class="nav-item nav-link active" href="./index.html">About <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active text-dark" href="./index.html">About <span
+              class="sr-only">(current)</span></a>
           <a class="nav-item nav-link text-light" href="./portfolio.html">Portfolio</a>
           <a class="nav-item nav-link text-light" href="./contact.html">Contact</a>
         </div>
@@ -41,16 +35,16 @@
     </div>
   </nav>
 
-  <div class="container">
-    <div class="row mt-4 ">
+  <div class="container mb-2 flex-shrink-0">
+    <div class="row mt-2 ">
       <div class="col d-flex">
-        <div class="text-info p-2">
+        <div class="text-dark p-2">
           <h2>About Me</h2>
         </div>
       </div>
     </div>
     <hr class="mb-5">
-    <img src="./assets/images/profile.jpg" alt="" class="rounded float-left mr-2 mt-2" height="150px" width="auto">
+    <img src="./assets/images/profile.jpg" alt="" class="rounded float-left mr-2 " height="150px" width="auto">
     <p class="lead">If I could be anyone in the world, who would I be? I would absolutely choose NOT to be the
       guy
       writing a bio
@@ -65,17 +59,30 @@
       ipsum dolore sint? Tempora sint eum rem quod officiis totam fuga assumenda tempore rerum, natus deleniti pariatur
       fugiat dolor quis ducimus sequi, qui, nulla modi labore. Consequatur delectus obcaecati fugiat in numquam, facilis
       recusandae alias.</p>
-    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt exercitationem autem dolorem ad
+    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt exercitationem autem dolorem
+      ad
       illo vero
       ipsum dolore sint? Tempora sint eum rem quod officiis totam fuga assumenda tempore rerum, natus deleniti pariatur
       fugiat dolor quis ducimus sequi, qui, nulla modi labore. Consequatur delectus obcaecati fugiat in numquam, facilis
       recusandae alias.</p>
   </div>
-  <div class="footer bg-dark">
+
+  <!-- <div class="footer bg-dark fixed-bottom mt-auto">
     <footer class="card-footer footer-font-style text-light footer-position mx-auto" style="width: 200px">
       <p>copyright</p>
     </footer>
-  </div>
+  </div> -->
+
+  <footer class="footer mt-auto py-3 bg-dark ">
+    <div class="container text-center">
+      <span class="text-light">Copyright &copy</span>
+    </div>
+  </footer>
+
+  <!-- <footer class="page-footer text-light bg-dark p-2 d-flex justify-content-center align-items-center">
+    <div class="footer-copyright text-center py-3">©Copyright
+    </div>
+  </footer> -->
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
