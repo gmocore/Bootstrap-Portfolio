@@ -1,6 +1,8 @@
 
 
 .card-img-top {
-    height: 15rem;
+    height: 20rem;
+    background-size: contain;
+    
 }
 
